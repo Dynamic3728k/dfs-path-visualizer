@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DFS Path Visualizer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="navbar">
+        <h1>DFS Path Finder</h1>
+        <div class="legend">
+            <div class="legend-item"><div class="node node-start"></div> Start</div>
+            <div class="legend-item"><div class="node node-end"></div> End</div>
+            <div class="legend-item"><div class="node node-wall"></div> Wall</div>
+            <div class="legend-item"><div class="node node-visited"></div> Visited</div>
+            <div class="legend-item"><div class="node node-path"></div> Path</div>
+        </div>
+        <div class="buttons">
+            <button onclick="visualizeDFS()">Visualize DFS</button>
+            <button onclick="clearBoard()">Clear Board</button>
+        </div>
+    </div>
+    
+    <div id="grid-container"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
